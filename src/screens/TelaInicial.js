@@ -9,9 +9,9 @@ export default function Iniciar() {
         <View style={styles.container}>
             <Text style={styles.inicial}>Seja Bem-Vindo ao seu catálogo de jogos.</Text>
 
-            <TouchableOpacity 
-                style={styles.button} 
-                onPress={() => navigation.navigate('Lista de Jogos')} 
+            <TouchableOpacity
+                style={styles.button}
+                onPress={() => navigation.navigate('Lista de Jogos')}
             >
                 <Text style={styles.buttonText}>Ir para Lista de Jogos</Text>
             </TouchableOpacity>

@@ -6,13 +6,13 @@ export default function CardGames({ game }) {
     const navigation = useNavigation();
 
     return (
-        <View style = {styles.fundo}>
-        <TouchableOpacity 
-            onPress={() => navigation.navigate('Detalhes dos Jogos', { game })}
-            style={styles.game}
+        <View style={styles.fundo}>
+            <TouchableOpacity
+                onPress={() => navigation.navigate('Detalhes dos Jogos', { game })}
+                style={styles.game}
             >
-            <Text>{game.name}</Text> 
-        </TouchableOpacity>
+                <Text>{game.name}</Text>
+            </TouchableOpacity>
         </View>
     );
 }

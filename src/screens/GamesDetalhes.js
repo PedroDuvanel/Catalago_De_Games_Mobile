@@ -10,33 +10,35 @@ export default function GamesDetalhes({ route }) {
             <Text style={styles.nome}>{game.name}</Text>
             <Text style={styles.text}>Ano: {game.ano}</Text>
             <Text style={styles.text}>Descrição: {game.descricao}</Text>
+            <Text style={styles.text}>Desenvolvedora: {game.desenvolvedora}</Text>
+            <Text style={styles.text}>Gênero: {game.genero}</Text>
+            <Text style={styles.text}>Plataforma: {game.plataforma}</Text>
         </View>
     );
 }
-
 const styles = StyleSheet.create({
     container: {
         backgroundColor: 'silver',
         padding: 20,
-        alignItems: 'center',
         height: 900,
-        gap: 20
+        gap: 10
     },
     title: {
         fontSize: 25,
-        fontWeight: 'bold', 
+        fontWeight: 'bold',
         fontStyle: 'italic',
         alignItems: 'center',
+        textAlign: 'center',
         marginBottom: 10,
     },
     nome: {
         fontSize: 20,
-        paddingBottom:20,
+        paddingBottom: 20,
         fontWeight: 'bold',
     },
     text: {
-        marginBottom: 10,
-        fontWeight: 'bold',
+        paddingTop: 10,
+        marginBottom: 0,
     },
     image: {
         width: '100%',
