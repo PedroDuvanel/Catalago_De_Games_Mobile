@@ -6,8 +6,8 @@ export default function GamesDetalhes({ route }) {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.nome}>Nome: {game.name}</Text>
             <Image source={game.image} style={styles.image} />
+            <Text style={styles.nome}>{game.name}</Text>
             <Text style={styles.text}>Ano: {game.ano}</Text>
             <Text style={styles.text}>Descrição: {game.descricao}</Text>
         </View>
@@ -16,7 +16,7 @@ export default function GamesDetalhes({ route }) {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: 'grey',
+        backgroundColor: 'silver',
         padding: 20,
         alignItems: 'center',
         height: 900,

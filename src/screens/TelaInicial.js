@@ -21,7 +21,7 @@ export default function Iniciar() {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: 'grey',
+        backgroundColor: 'silver',
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
